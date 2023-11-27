@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homework 5</title>
+        <title>Homework 6</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" />
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -77,7 +77,19 @@
                                 </svg>    
                             </label> 
                             
-                            
+                            <label for="comment" class="service-label">
+                                <span class="input-label">Comment</span>
+                                <textarea class="service-input-textarea" rows="8" placeholder="Text input"></textarea>
+                            </label>
+
+                            <label for="agree" class="service-agree">
+                                <input type="checkbox" name="agree" class="agree-checkbox">
+                                <svg width="16" height="16" class="agree-check-icon">
+                                    <use href="./images/icon.svg#icon-checkbox"> </use>
+                                </svg>  
+                                <span class="agree-text">I accept the terms and condition of the <a href="#">Privacy Policy</a></span>
+                            </label>
+                            <button class="modal-send">Send</button>
                         </form>
                     </div>
                 </div>
@@ -310,7 +322,8 @@
 
         </main>
 
-        <footer class="bg-dark">
+        <footer class="bg-dark footer">
+           
         <div class="footer-section">
             <div class="footer-studio">
                 <a href="#" class="logo link"> <span class="logo-web">Web</span><span class="logo-studio-footer">studio</span> </a>
@@ -348,7 +361,19 @@
                     </ul>   
                 </div>
                     
-        </div>    
+        </div>  
+        <div class="footer-sub">
+            <p class="footer-subscribe-text">Subscribe</p>
+            <form>
+                <input type="text" placeholder="Email" class="input-sub">
+                <Button class="btn-sub">
+                    Subscribe
+                    <svg width="24" height="24">
+                        <use href="./images/icons (2).svg#send"></use>
+                    </svg>
+                </Button>
+            </form>
+        </div>  
         </footer>
         <script src="./js/modal.js" type="text/javascript"></script>
     </body>
